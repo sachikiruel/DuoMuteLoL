@@ -1,0 +1,34 @@
+{
+  "name": "duomutelol",
+  "version": "1.0.0",
+  "description": "Remotely mute your duo's League Voice mic and play a sound effect through it.",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/selftest.js",
+    "dist": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "local.duomute.lol",
+    "productName": "DuoMuteLoL",
+    "files": [
+      "src/**",
+      "package.json"
+    ],
+    "extraResources": [
+      "soundeffect.mp3"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  },
+  "dependencies": {
+    "koffi": "^3.3.8",
+    "mqtt": "^5.16.1"
+  },
+  "devDependencies": {
+    "electron": "^45.3.2",
+    "electron-builder": "^26.18.0"
+  }
+}
