@@ -1,6 +1,6 @@
 # DuoMuteLoL
 
-Remotely mute your duo's League Voice microphone and play `soundeffect.mp3` through it.
+Remotely mute your duo's League Voice microphone
 
 Both of you run the same app. Each app passes the real microphone through to a
 virtual microphone that League uses. When someone in your room presses
